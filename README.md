@@ -1,16 +1,14 @@
-# myapp
+# Example
 
-A new Flutter project.
+Example of how we can build two different applications with flutter, by using two entry points.
 
-## Getting Started
+These entry points provide the available routes, a `isFull` boolean (but use a better name for this variable), and maybe the admin-specific services.
 
-This project is a starting point for a Flutter application.
+The services and the boolean can be given through `Provider`.
 
-A few resources to get you started if this is your first Flutter project:
+Then you launch/build the application with the `-t` option to specify the endpoint needed:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+flutter run -t lib/normal-routes.dart
+flutter run -t lib/more-routes.dart
+```
